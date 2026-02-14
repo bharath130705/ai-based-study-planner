@@ -1,0 +1,56 @@
+.planner-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.planner-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.planner-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.planner-form button {
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #6c63ff, #5a4fdc);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.planner-summary {
+  background: #f3f4f6;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.planner-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

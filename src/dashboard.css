@@ -1,0 +1,145 @@
+/* ---- Base layout ---- */
+.dash { min-height: 100vh; background: #f5f7ff; }
+.dash__container { max-width: 1100px; margin: 0 auto; padding: 18px; }
+
+/* ---- Nav ---- */
+.dash__nav{
+  height: 64px; background:#0b1220; color:#fff;
+  display:grid; grid-template-columns:220px 1fr 320px;
+  align-items:center; gap:12px; padding:0 18px;
+}
+.dash__brand{ font-weight:900; font-size:16px; }
+.dash__search{ display:flex; justify-content:center; }
+.dash__user{ display:flex; justify-content:flex-end; align-items:center; gap:12px; }
+.dash__userText{ font-size:13px; color:#d1d5db; }
+
+/* ---- Hero ---- */
+.dash__hero{
+  border-radius:18px; padding:18px;
+  background: linear-gradient(135deg,#4f46e5,#7c3aed);
+  color:#fff; display:flex; align-items:center;
+  justify-content:space-between; gap:14px; flex-wrap:wrap;
+}
+.dash__title{ margin:0; font-size:28px; font-weight:900; }
+.dash__subtitle{ margin:6px 0 0; opacity:.95; }
+.dash__actions{ display:flex; gap:10px; flex-wrap:wrap; }
+
+/* ---- KPI ---- */
+.dash__kpis{
+  margin-top:14px;
+  display:grid; gap:12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.kpi{
+  background:#fff; border-radius:16px; padding:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+.kpi__title{ font-weight:800; color:#111827; }
+.kpi__value{ font-size:22px; font-weight:900; margin-top:8px; }
+.kpi__hint{ margin-top:6px; font-size:13px; color:#6b7280; }
+
+/* ---- Main grid ---- */
+.dash__grid{
+  margin-top:12px;
+  display:grid; gap:12px;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+/* ---- Panel ---- */
+.panel{
+  background:#fff; border-radius:16px; padding:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+.panel__head{ display:flex; justify-content:space-between; align-items:center; }
+.panel__title{ margin:0; color:#111827; }
+.panel__add{ display:flex; gap:8px; margin-top:12px; }
+
+/* ---- Inputs ---- */
+.input{
+  width:100%; padding:12px; border-radius:12px;
+  border:1px solid #e5e7eb; outline:none; background:#f9fafb;
+}
+.input--dark{
+  border:1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.06);
+  color:#fff;
+}
+
+/* ---- Buttons ---- */
+.btn{
+  border:none; border-radius:12px; padding:12px 14px;
+  cursor:pointer; font-weight:900;
+}
+.btn--primary{ background:#fff; color:#4f46e5; }
+.btn--outline{ background:transparent; color:#fff; border:2px solid rgba(255,255,255,.85); }
+.btn--light{ background:#fff; color:#111827; border:1px solid rgba(255,255,255,.2); }
+.btn--dark{ background:#111827; color:#fff; }
+.btn--ghost{ background:#fff; border:1px solid #e5e7eb; color:#111827; }
+
+/* ---- Badges ---- */
+.badge{
+  background:#111827; color:#fff;
+  border-radius:999px; padding:6px 10px;
+  font-size:12px; font-weight:900;
+}
+.badge--soft{
+  background:#eef2ff; color:#3730a3;
+  border-radius:999px; padding:6px 10px;
+  font-size:12px; font-weight:900;
+}
+
+/* ---- Progress ---- */
+.progress{
+  height:10px; border-radius:999px; background:#eef2ff;
+  overflow:hidden; margin-top:12px;
+}
+.progress__bar{ height:100%; background:#4f46e5; border-radius:999px; }
+
+/* ---- Tasks ---- */
+.tasks{ margin-top:10px; display:grid; gap:10px; }
+.task{
+  display:grid; grid-template-columns:18px 1fr 34px;
+  align-items:center; gap:10px;
+  padding:12px; border-radius:14px;
+  border:1px solid #e5e7eb; background:#f9fafb;
+}
+.check{
+  width:16px; height:16px; border-radius:5px;
+  border:1px solid #0b1220; background:#fff;
+}
+.check--on{ background:#0b1220; }
+.task__text{
+  text-align:left; border:none; background:transparent;
+  font-weight:800; cursor:pointer; color:#111827;
+}
+.task__text--done{ text-decoration:line-through; color:#6b7280; }
+.iconBtn{
+  border:none; background:transparent; cursor:pointer;
+  font-weight:900; color:#6b7280;
+}
+
+/* ---- Timer ---- */
+.timer{
+  margin-top:12px;
+  border-radius:14px; border:1px solid #e5e7eb;
+  background:#f9fafb; padding:14px; text-align:center;
+}
+.timer__time{ font-size:28px; font-weight:900; color:#111827; }
+.timer__buttons{ display:flex; gap:10px; justify-content:center; margin-top:10px; }
+
+.pill{
+  margin-top:10px;
+  border:1px solid #e5e7eb;
+  background:#f3f4ff;
+  padding:12px; border-radius:14px;
+  color:#111827;
+}
+
+.btnRow{ display:flex; gap:10px; margin-top:12px; flex-wrap:wrap; }
+.spacer{ height:12px; }
+
+.muted{ color:#6b7280; margin-top:10px; }
+.small{ font-size:12px; margin-top:8px; }
+
+.dash__footer{ margin-top:18px; text-align:center; }
+.link{ color:#4f46e5; font-weight:900; text-decoration:none; }
